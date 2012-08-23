@@ -1,0 +1,16 @@
+D, [2012-08-23T00:06:31.522474 #5272] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+D, [2012-08-23T00:06:31.523095 #5272] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+D, [2012-08-23T00:06:31.524718 #5272] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+I, [2012-08-23T00:06:31.524843 #5272]  INFO -- : Migrating to CreateCustomers (1)
+D, [2012-08-23T00:06:31.536975 #5272] DEBUG -- :   [1m[35mSQL (9.7ms)[0m  CREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `phone` varchar(255), `age` int(11)) ENGINE=InnoDB
+D, [2012-08-23T00:06:31.539575 #5272] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('1')[0m
+D, [2012-08-23T00:22:17.312406 #5400] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+D, [2012-08-23T00:22:17.318831 #5400] DEBUG -- :   [1m[35mSQL (6.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+D, [2012-08-23T00:22:17.319887 #5400] DEBUG -- :   [1m[36mSQL (0.6ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+D, [2012-08-23T00:22:17.339975 #5400] DEBUG -- :   [1m[35mSQL (19.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+D, [2012-08-23T00:22:17.340507 #5400] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+D, [2012-08-23T00:22:17.341155 #5400] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+D, [2012-08-23T00:22:17.343393 #5400] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+I, [2012-08-23T00:22:17.343651 #5400]  INFO -- : Migrating to CreateCustomers (1)
+D, [2012-08-23T00:22:17.350781 #5400] DEBUG -- :   [1m[35mSQL (4.0ms)[0m  CREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `phone` varchar(255), `age` int(11)) ENGINE=InnoDB
+D, [2012-08-23T00:22:17.353599 #5400] DEBUG -- :   [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('1')[0m
