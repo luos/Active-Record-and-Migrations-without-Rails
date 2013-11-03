@@ -1,6 +1,6 @@
-adapter: mysql
+adapter: sqlite3
 database:  teste_active_record
-username: root
-password: serviceweb
-host:      localhost
+#username: root
+#password: serviceweb
+#host:      localhost
 

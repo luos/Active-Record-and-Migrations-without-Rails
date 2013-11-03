@@ -14,3 +14,19 @@ D, [2012-08-23T00:22:17.343393 #5400] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1
 I, [2012-08-23T00:22:17.343651 #5400]  INFO -- : Migrating to CreateCustomers (1)
 D, [2012-08-23T00:22:17.350781 #5400] DEBUG -- :   [1m[35mSQL (4.0ms)[0m  CREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `phone` varchar(255), `age` int(11)) ENGINE=InnoDB
 D, [2012-08-23T00:22:17.353599 #5400] DEBUG -- :   [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('1')[0m
+D, [2013-11-03T12:21:09.817354 #8940] DEBUG -- :   [1m[36m (142.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2013-11-03T12:21:10.083869 #8940] DEBUG -- :   [1m[35m (265.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+D, [2013-11-03T12:21:10.088868 #8940] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2013-11-03T12:21:10.089205 #8940]  INFO -- : Migrating to KakaosCsiga (20131103122035)
+D, [2013-11-03T12:21:27.884846 #8962] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2013-11-03T12:21:27.884951 #8962]  INFO -- : Migrating to KakaosCsiga (20131103122035)
+D, [2013-11-03T12:21:38.182770 #8983] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2013-11-03T12:21:38.183077 #8983]  INFO -- : Migrating to KakaosCsiga (20131103122035)
+D, [2013-11-03T12:22:09.952250 #9056] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2013-11-03T12:22:09.952575 #9056]  INFO -- : Migrating to KakaosCsiga (20131103122035)
+D, [2013-11-03T12:22:26.943085 #9090] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2013-11-03T12:22:26.943184 #9090]  INFO -- : Migrating to KakaosCsiga (20131103122035)
+D, [2013-11-03T12:22:26.944973 #9090] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2013-11-03T12:22:26.957714 #9090] DEBUG -- :   [1m[36m (2.6ms)[0m  [1mCREATE TABLE "hello" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+D, [2013-11-03T12:22:26.967154 #9090] DEBUG -- :   [1m[35mSQL (3.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20131103122035"]]
+D, [2013-11-03T12:22:27.188145 #9090] DEBUG -- :   [1m[36m (220.6ms)[0m  [1mcommit transaction[0m
